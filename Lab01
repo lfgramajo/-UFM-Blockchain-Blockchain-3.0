@@ -29,8 +29,8 @@ CAMBIAR PERMISOS AL ARCHIVO
 chmod 0600  ~/.bitcoin/bitcoin.conf
 
 INGRESAR AL DIRECTORIO E INICIAR EL SERVICIO
-cd bitcoin-0.17.1/
-./ bitcoind -regtest -daemon
+cd bitcoin-0.17.1/bin/
+./bitcoind -regtest -daemon
 
 COMANDOS CLI
 OBTENER BALANCE DE LA CUENTA
