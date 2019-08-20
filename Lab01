@@ -1,0 +1,42 @@
+DESCARGAR EL SERVIDOR DE BITCOIN 
+https://bitcoincore.org/bin/bitcoin-core-0.17.1/bitcoin-0.17.1-x86_64-linux-gnu.tar.gz
+
+wget https://bitcoincore.org/bin/bitcoin-core-0.17.1/bitcoin-0.17.1-x86_64-linux-gnu.tar.gz
+tar -xvzf bitcoin-0.17.1-x86_64-linux-gnu.tar.gz 
+
+CREAR DIRECTORIO CONFIGURACION
+mkdir ~/.bitcoin
+
+EDITAR ARCHIVO DE CONFIG
+vim ~/.bitcoin/bitcoin.conf
+
+CON LA SIGUIENTE INFORMACION
+daemon=1
+txindex=1
+rpcuser=123
+rpcpassword=123
+rpchost=http://127.0.0.1
+rpcport=18443
+
+# Run on the test network instead of the real bitcoin network.
+#testnet=1
+regtest=1
+
+debug=0
+~           
+
+CAMBIAR PERMISOS AL ARCHIVO
+chmod 0600  ~/.bitcoin/bitcoin.conf
+
+INGRESAR AL DIRECTORIO E INICIAR EL SERVICIO
+cd bitcoin-0.17.1/
+./ bitcoind -regtest -daemon
+
+COMANDOS CLI
+OBTENER BALANCE DE LA CUENTA
+./bitcoin-cli -regtest getbalance
+GENERAR BLOQUES GENESIS (SOLO SE EJECUTA 1 VEZ)
+./bitcoin-cli -regtest generate 101
+CONSULTAR SALGO NO GASTADO
+./bitcoin-cli -regtest listunspent
+
