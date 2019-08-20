@@ -43,13 +43,13 @@ CONSULTAR SALGO NO GASTADO
 ./bitcoin-cli -regtest listunspent
 
 CREAR NUEVA DIRECCION (CUENTA)
-bitcoin-cli -regtest getnewaddress
+./bitcoin-cli -regtest getnewaddress
 
 AGREGAMOS LA DIRECCION COMO VARIABLE DE ENTORNO
 NEW_ADDRESS=2MyxePapmFFqHgr23ijVZJBkcQoCPE1hrQD
 
 ENVIAR BTC A LA NUEVA DIRECCION
-bitcoin-cli -regtest sendtoaddress $NEW_ADDRESS 10.00
+./bitcoin-cli -regtest sendtoaddress $NEW_ADDRESS 10.00
 
 CONSULTAR UTXOs - Y TRANSACCIONES SIN CONFIRMAR
 ./bitcoin-cli -regtest listunspent 0
