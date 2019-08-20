@@ -35,8 +35,41 @@ cd bitcoin-0.17.1/
 COMANDOS CLI
 OBTENER BALANCE DE LA CUENTA
 ./bitcoin-cli -regtest getbalance
+
 GENERAR BLOQUES GENESIS (SOLO SE EJECUTA 1 VEZ)
 ./bitcoin-cli -regtest generate 101
+
 CONSULTAR SALGO NO GASTADO
 ./bitcoin-cli -regtest listunspent
+
+CREAR NUEVA DIRECCION (CUENTA)
+bitcoin-cli -regtest getnewaddress
+
+AGREGAMOS LA DIRECCION COMO VARIABLE DE ENTORNO
+NEW_ADDRESS=2MyxePapmFFqHgr23ijVZJBkcQoCPE1hrQD
+
+ENVIAR BTC A LA NUEVA DIRECCION
+bitcoin-cli -regtest sendtoaddress $NEW_ADDRESS 10.00
+
+CONSULTAR UTXOs - Y TRANSACCIONES SIN CONFIRMAR
+./bitcoin-cli -regtest listunspent 0
+
+GENERAR UN NUEVO BLOQUE PARA CONFIRMAR NUESTRA TRANSACCION
+./bitcoin-cli -regtest generate 1
+
+DETENER SERVICIO BTC
+./bitcoin-cli stop
+
+
+
+
+
+
+
+
+
+
+
+
+
 
