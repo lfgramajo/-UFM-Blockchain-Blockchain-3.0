@@ -1,0 +1,32 @@
+#Tarea: Desarrollo de una ICO en la Cadena de Bloques Ethereum
+
+##Objetivo General
+Desarrollar un contrato inteligente para una Oferta Inicial de Monedas (ICO, por sus siglas en inglés) con el objetivo de recaudar 100 Sepolia-ETH. Además, crear una interfaz de usuario simple para interactuar con el contrato.
+
+##Detalles del Token y la ICO
+Nombre del Token: A elección del alumno (Ejemplo: Marrocoin)
+Símbolo del Token: Tres letras mayúsculas (Ejemplo: MRC)
+Decimales: 18
+Duración de la ICO: 7 días
+Valor del Token: El valor del token en Sepolia-ETH estará determinado por el mes de nacimiento del dueño de la ICO. Específicamente, el valor será 10 veces el número del mes de nacimiento. Por ejemplo, si el dueño de la ICO nació en septiembre (mes número 9), entonces el valor del token será de 90 Marrocoins por 1 Sepolia-ETH.
+
+###Requisitos
+Contrato ICO en Solidity
+
+El contrato debe permitir que cualquier usuario participe en la ICO transfiriendo Sepolia-ETH.
+Los tokens adquiridos deben ser entregados al inversor una vez que finalice la ICO.
+
+###Interfaz de Usuario Simple
+
+Bibliotecas Permitidas: Puedes utilizar React o cualquier otra biblioteca de tu elección para desarrollar la interfaz.
+Mostrar el saldo actual de Sepolia-ETH del usuario.
+Mostrar el saldo de tokens (Marrocoin) del usuario.
+Indicar la cantidad de Marrocoin pendiente de reclamo por el usuario.
+Mostrar el estado temporal de la ICO.(Ej tiempo de vida, cantidad de tokens vendidos, cantidad de Sepolia-ETH recibidos, etc)
+Permitir la inversión en la ICO con una cantidad definida por el usuario. Las transacciones de aprobación y participación deben ser firmadas secuencialmente.
+Habilitar la opción para que el usuario reclame sus tokens Marrocoin.
+
+##Entrega y Expectativas
+Plazo de Entrega: 7 días a partir de la asignación de la tarea.
+Cómo Entregar: Compartir el repositorio de Git a través de correo electrónico.
+Ejecución en Tiempo Real: La entrega final incluirá la ejecución de los ICOs en tiempo real durante la clase. Cada estudiante deberá estar preparado para lanzar y demostrar su ICO en un entorno en vivo.
