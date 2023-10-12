@@ -5,10 +5,12 @@
 ##Plazo de Entrega
 +**Duración del Proyecto:** Dos semanas desde la fecha de asignación.
 +**Método de Entrega:** Los estudiantes deberán enviar toda la documentación y pruebas de ejecución antes de la fecha límite.
+
 ##Objetivos del Proyecto
 +Configurar nodos de Lightning Network en un entorno de pruebas (regtestnet). Los tres nodos deben ser configurados en la computadora del estudiante en su casa. Se deben tomar capturas de pantalla de la creación de cada canal.
 +Realizar transacciones de Lightning entre diferentes nodos. Se deben tomar capturas de pantalla (3) de los saldos después de realizar varias transacciones entre ellos.
 +Explorar los mecanismos de enrutamiento y canales de pago en la Lightning Network.
+
 ##Características Clave del Proyecto
 +**Configuración de Nodos:** Los estudiantes instalarán y configurarán nodos de Lightning Network utilizando software como LND (Lightning Network Daemon) o c-lightning.
 +**Apertura de Canales:** Cada estudiante abrirá mínimo dos canales de Lightning entre los nodos de otros compañeros en la red de pruebas.
@@ -16,13 +18,16 @@
 +**Enrutamiento y Tarifas:** Explorarán cómo se enrutan las transacciones a través de la red y cómo se determinan las tarifas. Se deben tomar capturas de pantalla (3) de los saldos después de realizar varias transacciones entre ellos.
 +**Cierre de Canales:** Aprenderán a cerrar canales de Lightning de manera segura y a resolver disputas.
 +**Diagrama de Red:** Cada estudiante alimentará un diagrama de red indicando los canales que ha abierto con otros nodos y el monto de cada canal. Este diagrama se estructurará durante la entrega en vivo en el pizarrón.
+
 ##Tecnologías Utilizadas
 +**Bitcoin Regtestnet:** Para un entorno de pruebas seguro.
 +**LND o c-lightning:** Para la implementación de los nodos de Lightning.
 +**gRPC o REST APIs:** Para interactuar con los nodos de Lightning.
+
 #Entrega y Evaluación
 +Los estudiantes tendrán dos semanas para completar el proyecto.
 +Se requerirá una demostración en vivo debido a la naturaleza del proyecto.
+
 ###Nota de Bibliografía
 +Para realizar este proyecto, se recomienda consultar el libro "Mastering the Lightning Network" como recurso educativo principal.
 
