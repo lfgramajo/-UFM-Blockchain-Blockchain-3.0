@@ -1,0 +1,32 @@
+#Proyecto: Implementación de Nodos de Lightning Network y Realización de Transacciones
+##Nota Importante
++Este proyecto no se llevará a cabo durante las horas de clase. Es una tarea que los estudiantes deben completar por su cuenta. El proyecto se considerará como entregado una vez que los estudiantes hayan cumplido con todos los requisitos y lo hayan documentado adecuadamente.
+
+##Plazo de Entrega
++**Duración del Proyecto:** Dos semanas desde la fecha de asignación.
++**Método de Entrega:** Los estudiantes deberán enviar toda la documentación y pruebas de ejecución antes de la fecha límite.
+##Objetivos del Proyecto
++Configurar nodos de Lightning Network en un entorno de pruebas (regtestnet). Los tres nodos deben ser configurados en la computadora del estudiante en su casa. Se deben tomar capturas de pantalla de la creación de cada canal.
++Realizar transacciones de Lightning entre diferentes nodos. Se deben tomar capturas de pantalla (3) de los saldos después de realizar varias transacciones entre ellos.
++Explorar los mecanismos de enrutamiento y canales de pago en la Lightning Network.
+##Características Clave del Proyecto
++**Configuración de Nodos:** Los estudiantes instalarán y configurarán nodos de Lightning Network utilizando software como LND (Lightning Network Daemon) o c-lightning.
++**Apertura de Canales:** Cada estudiante abrirá mínimo dos canales de Lightning entre los nodos de otros compañeros en la red de pruebas.
++**Transacciones y Pagos:** Realizarán transacciones de Lightning vía factura o "invoice" para simular compras o transferencias de fondos.
++**Enrutamiento y Tarifas:** Explorarán cómo se enrutan las transacciones a través de la red y cómo se determinan las tarifas. Se deben tomar capturas de pantalla (3) de los saldos después de realizar varias transacciones entre ellos.
++**Cierre de Canales:** Aprenderán a cerrar canales de Lightning de manera segura y a resolver disputas.
++**Diagrama de Red:** Cada estudiante alimentará un diagrama de red indicando los canales que ha abierto con otros nodos y el monto de cada canal. Este diagrama se estructurará durante la entrega en vivo en el pizarrón.
+##Tecnologías Utilizadas
++**Bitcoin Regtestnet:** Para un entorno de pruebas seguro.
++**LND o c-lightning:** Para la implementación de los nodos de Lightning.
++**gRPC o REST APIs:** Para interactuar con los nodos de Lightning.
+#Entrega y Evaluación
++Los estudiantes tendrán dos semanas para completar el proyecto.
++Se requerirá una demostración en vivo debido a la naturaleza del proyecto.
+###Nota de Bibliografía
++Para realizar este proyecto, se recomienda consultar el libro "Mastering the Lightning Network" como recurso educativo principal.
+
+###Notas Adicionales
++Se debe minar un bloque cada 1 minuto para mantener la actividad de la red.
++El libro "Mastering the Lightning Network" solo detalla la creación de los nodos. Para poder conectarse entre los diferentes dispositivos, los estudiantes necesitarán configurar la red de Docker para que los nodos puedan ser accesibles por otras computadoras en la LAN.
++Para abrir un canal, necesitamos conocer la clave pública de nuestro par y su IP. También necesitaremos decidir sobre la capacidad del canal. Además, debemos tener en cuenta que es posible que no podamos abrir un canal con el monto total que tenemos en nuestra billetera, debido a las tarifas en cadena y las reservas.
